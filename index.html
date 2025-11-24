@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- SEO & MOBILE -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="J&Z Learning Hub – A learning and creativity space offering English, Science, Computer, Dance, Yoga and more for children.">
+
+<!-- SECURITY (Live website me helpful) -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+
+<title>J&Z Learning Hub</title>
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+body { 
+  background: linear-gradient(to bottom, #8fcce7, #b8ffdc); 
+  color:#333;
+}
+
+/* Header */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:15px;
+  padding:10px 20px;
+  position:sticky;
+  top:0;
+  background: linear-gradient(to right, #a0d8f1, #b8ffdc);
+  z-index:1000;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+header img { width:50px; height:auto; }
+header h1 { font-size:22px; color:#333; }
+
+/* Top links / Navbar */
+.top-links { text-align:center; margin:15px 0; }
+.top-links a {
+  display:inline-block;
+  background:#fff;
+  color:#1a3f7c;
+  padding:10px 20px;
+  margin:5px 10px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s, box-shadow 0.3s;
+}
+.top-links a:hover { background:#ffdd57; color:#333; box-shadow:0 0 15px #ffdd57; }
+
+/* Marquee */
+.marquee {
+  overflow:hidden;
+  background:#e0f7f1;
+  border-radius:8px;
+  padding:10px 0;
+  margin-bottom:20px;
+}
+.marquee p {
+  display:inline-block;
+  white-space:nowrap;
+  color:#1a3f7c;
+  font-size:20px;
+  font-weight:bold;
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Hero */
+.hero {
+  text-align:center;
+  padding:80px 20px;
+  background: linear-gradient(135deg, #a0d8f1, #b8ffdc);
+}
+.hero img { max-width:100%; border-radius:15px; margin-bottom:20px; }
+.hero h2 { font-size:36px; color:#1a3f7c; margin-bottom:15px; }
+.hero p { font-size:18px; color:#333; margin-bottom:25px; }
+
+/* Sections */
+section { padding:60px 20px; text-align:center; max-width:1200px; margin:auto; }
+section h2 { color:#1a3f7c; font-size:30px; margin-bottom:20px; }
+section p { font-size:17px; line-height:1.6; }
+
+/* Cards */
+.cards { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; }
+.card {
+  background:#fff; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  width:250px; padding:20px; text-align:center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.card img { width:100%; border-radius:10px; margin-bottom:10px; transition: transform 0.4s ease, filter 0.4s ease; }
+.card:hover { transform: scale(1.08) rotate(-1deg); box-shadow:0 12px 25px rgba(0,0,0,0.2); }
+.card:hover img { transform:scale(1.1); filter:brightness(1.1); }
+.card h3 { color:#1a3f7c; margin-bottom:10px; }
+
+/* Contact form */
+.contact form {
+  background:#fff; width:350px; margin:auto; padding:25px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+input, textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px; outline:none; }
+button { background:#1a3f7c; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; transition:0.3s, box-shadow 0.3s; }
+button:hover { background:#ffdd57; color:#333; box-shadow:0 0 15px #ffdd57; transform:scale(1.05); }
+
+/* Footer */
+footer { background:#1a3f7c; color:#fff; text-align:center; padding:15px; font-size:14px; }
+
+/* Responsive */
+@media screen and (max-width:768px){
+  .top-links { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
+  .cards { flex-direction:column; align-items:center; }
+  .card { width:90%; margin-bottom:20px; }
+  form { width:90%; padding:20px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" alt="J&Z Logo">
+  <h1>J&Z Learning Hub</h1>
+</header>
+
+<div class="top-links">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#subjects">Subjects</a>
+  <a href="#why">Why Choose Us</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="marquee">
+  <p>Stay Connected with J&Z 💫 — Learn. Create. Inspire.</p>
+</div>
+
+<section class="hero" id="home">
+  <img src="images/hero-banner.jpg" alt="Learning Hub Banner">
+  <h2>Welcome to J&Z Learning Hub</h2>
+  <p>Where Learning meets Passion — explore your talent in studies, dance, and beyond!</p>
+  <a class="top-links" href="#subjects">Explore Subjects</a>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>At J&Z Learning Hub, we believe every student has a unique talent. Whether it’s mastering a subject or expressing through dance, we help you shine in every way.</p>
+</section>
+
+<section class="subjects" id="subjects">
+  <h2>Explore Our Subjects</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/english.jpg" alt="English">
+      <h3>English</h3>
+      <p>Improve your language and communication skills.</p>
+    </div>
+    <div class="card">
+      <img src="images/computer.jpg" alt="Computer Basics">
+      <h3>Computer Basics</h3>
+      <p>Learn essential digital skills for the future.</p>
+    </div>
+    <div class="card">
+      <img src="images/yoga.jpg" alt="Yoga">
+      <h3>Yoga</h3>
+      <p>Find balance and peace with guided sessions.</p>
+    </div>
+    <div class="card">
+      <img src="images/dance1.jpg" alt="Dance Class">
+      <h3>Dance Class</h3>
+      <p>Express yourself through different dance styles.</p>
+    </div>
+    <div class="card">
+      <img src="images/science.jpg" alt="Science">
+      <h3>Science</h3>
+      <p>Explore the wonders of science with fun learning.</p>
+    </div>
+    <div class="card">
+      <img src="images/maths.jpg" alt="Maths">
+      <h3>Maths</h3>
+      <p>Grow problem-solving and analytical skills.</p>
+    </div>
+    <div class="card">
+      <img src="images/abacus.jpg" alt="Abacus">
+      <h3>Abacus</h3>
+      <p>Boost mental mathematics speed effectively.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <h2>Why Choose Us</h2>
+  <p>✨ Focus on learning + creativity<br>
+  📚 Expert tutors and instructors<br>
+  🎯 Confidence and skill development<br>
+  💫 Learn anytime with flexible access</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm" action="https://formsubmit.co/joyzone901@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Message from J&Z Website">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 J&Z Learning Hub
+</footer>
+
+<script>
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(e){
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const message = form.message.value.trim();
+  if(name === "" || email === "" || message === ""){
+    e.preventDefault();
+    alert("Please fill all fields before submitting!");
+  }
+});
+</script>
+
+</body>
+</html>
