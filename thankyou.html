@@ -49,9 +49,17 @@
 </head>
 <body>
 
-  <h1>Thank You!</h1>
+  <div id="thankyoumessage">
+    <hi>thankyou!</hi>
   <p>Your message has been sent successfully. We will get back to you soon.</p>
   <a href="index.html">Back to Home</a>
-
+  </div>
+  <script>
+    // Check if user came here via form submit
+    if (performance.navigation.type === performance.navigation.TYPE_RELOAD){
+      // Prevent form resubmission alert in some browsers
+      history.replaceState({}, document. title, "thankyou.html");
+    }
+  </script>
 </body>
 </html>
